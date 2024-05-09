@@ -6,7 +6,7 @@ Este documento presenta un esquema detallado del sistema de detección de objeto
 ## Objetivo Principal:
 Desarrollar un sistema avanzado para la detección de objetos (campo, balón, jugadores), líneas de siega y el campo en imágenes de partidos de fútbol, abordando subproblemas.
 
-![Ejemplo imagen original y resultado](URL_de_la_imagen)
+![Ejemplo imagen original y resultado](https://github.com/manuamest/SoccerImgDetector/blob/main/ORIGINALRESULTADO.png)
 
 ## Subproblemas y Metodologías:
 
@@ -15,7 +15,7 @@ Desarrollar un sistema avanzado para la detección de objetos (campo, balón, ju
 - **Evaluación:** Se logró una identificación precisa del área del césped en la mayoría de los casos. Sin embargo, en algunas imágenes, los carteles fueron erróneamente identificados como parte del campo, afectando la detección de objetos.
 
 #### Resultados de la Predicción:
-- Campo de Fútbol:
+- **Campo de Fútbol**:
   - Predicción: Campo de Fútbol
   - Real: Campo de Fútbol 15 1
   - Real: No Campo de Fútbol 4 0
@@ -28,7 +28,7 @@ Desarrollar un sistema avanzado para la detección de objetos (campo, balón, ju
 - **Evaluación:** Las líneas detectadas ofrecen una comprensión clara de la perspectiva del campo. Los errores principales se derivan de la falta de detección de algunas líneas.
 
 #### Resultados de la Predicción:
-- Línea de Siega:
+- **Línea de Siega**:
   - Predicción: Línea de Siega
   - Real: Línea de Siega 150 17
   - Real: No Línea de Siega 2 0
@@ -41,7 +41,7 @@ Desarrollar un sistema avanzado para la detección de objetos (campo, balón, ju
 - **Evaluación:** La metodología resultó eficaz para identificar jugadores, árbitros y el balón, aunque requiere mejoras para una distinción más precisa de estos elementos.
 
 #### Resultados de la Predicción:
-- Jugador:
+- **Jugador**:
   - Predicción: Jugador
   - Real: Jugador 255 23
   - Real: No Jugador 30 0
@@ -50,7 +50,12 @@ Desarrollar un sistema avanzado para la detección de objetos (campo, balón, ju
 - **Mejora Sugerida:** Implementación de algoritmos de reconocimiento de patrones y aprendizaje automático para una clasificación más precisa de los jugadores y la pelota
 
 ## Ejecucion
-
+Se pueden ejecutar los scripts independientemente con el objetivo de evaluar los subproblemas o ejecutar el programa general.
+```
+git clone git@github.com:manuamest/SoccerImgDetector.git
+cd SoccerImgDetector
+python3 main.py
+```
 
 ---
 
